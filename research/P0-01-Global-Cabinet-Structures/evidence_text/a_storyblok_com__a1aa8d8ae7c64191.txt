@@ -1,0 +1,9 @@
+SOURCE_FILE: C:\Users\ikaon\Documents\my_project\P0-01-Global-Cabinet-Structures\raw_snapshots\a_storyblok_com__a1aa8d8ae7c64191.pdf
+PAGES: 3
+
+===== PAGE 1 =====
+KB_Kit_Inst_W-51908-600-FingerPull-Crn-WC-V9.indd   1 24/9/19   3:05 pm
+===== PAGE 2 =====
+KB_Kit_Inst_W-51908-600-FingerPull-Crn-WC-V9.indd   2 24/9/19   3:05 pm
+===== PAGE 3 =====
+KB_Kit_Inst_W-51908-600-FingerPull-Crn-WC-V9.indd   3 24/9/19   3:05 pm

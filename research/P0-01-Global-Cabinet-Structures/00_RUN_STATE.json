@@ -1,0 +1,103 @@
+{
+  "task": "P0-01-D Global cabinet panel assembly structure research (AU-first)",
+  "created": "2026-10-13",
+  "updated": "2026-10-14T02:30:00",
+  "run_status": "REPORTS_GENERATED_PHASE4_PARTIAL",
+  "environment": {
+    "platform": "windows",
+    "python": "3.11.9",
+    "tools_available": [
+      "web_search",
+      "webfetch",
+      "fetch.py (robots+ratelimit)",
+      "pypdf 6.20.1",
+      "pymupdf 1.28.2 (PDF->PNG render)",
+      "lxml",
+      "PIL"
+    ],
+    "tools_unavailable": [
+      "browser-control MCP"
+    ],
+    "sibling_projects": {
+      "P0-01-A_china": "P0-01-China-Extraction (local CAD/docs)",
+      "P0-01-B_australia": "P0-01-Australia-Research (kaboodle PDFs + KB guide text reused as B:S###)"
+    }
+  },
+  "phases": {
+    "phase0_setup": "done",
+    "phase1_local_evidence": "done",
+    "phase2_kaboodle_library": "done (77 PDFs enumerated+downloaded; key carcass pages rendered+visually confirmed)",
+    "phase3_au_nz_sources": "done (kaboodle+flatpax+CFP+mocka+ADP+KB guide)",
+    "phase4_global": "partial_done (UK 4 sources; IKEA; US DIY lit; CN sibling; DE/IT/JP pending)",
+    "phase5_dedupe_validate": "done_for_current_corpus (16 patterns deduped; golden-test refs listed)",
+    "phase6_reports": "done (10/11/12/13/14/15 written)"
+  },
+  "stats": {
+    "sources": 44,
+    "assemblies": 36,
+    "parts": 38,
+    "joints": 30,
+    "constraints": 32,
+    "patterns": 20,
+    "param_candidates": 6,
+    "evidence_records": 26,
+    "kaboodle_pdfs_downloaded": 77,
+    "pages_rendered_inspected": 14,
+    "flatpax_pdfs": 14,
+    "uk_pdfs": 4
+  },
+  "access_restrictions": {
+    "a.storyblok.com": "public CDN, fetched at rate limit",
+    "manualslib.com": "403 - skipped",
+    "kogan.com": "robots deny - skipped",
+    "wallbeds.com.au": "403 fetch.py; partial via webfetch"
+  },
+  "reuse_from_siblings": [
+    "B:S### source ids cross-referenced (KB training guide = SRC-D-0028, Custom Flatpack = SRC-D-0029)",
+    "P0-01-B kaboodle PDF text extractions reused where identical files"
+  ],
+  "key_confirmations_this_run": [
+    "kaboodle base = NO top panel, front support rail only, solid overlay back, legs 145",
+    "kaboodle oven cab = NO back, NO top, 2 support panels",
+    "kaboodle blind corner pantry = NO back (tube + cam+pin fixed shelf)",
+    "kaboodle corner cabs = L-plan, 2 backs, sides overhang backs",
+    "kaboodle oven tower = stacked boxes between shared full-height end panels (18/20mm front offset by door type)",
+    "kaboodle drawer box = walls stand on full bottom floor",
+    "kaboodle joinery = face screws std; cam+pin+dowel on open-shelf/premium",
+    "IKEA METOD = cam+dowel, thin back floating in grooves, suspension rail, 32mm hole grid",
+    "Custom Flatpack AU = mortice-and-tenon + Rafix",
+    "KB guide = 4 documented back methods (overlay/internal/rebated/rail-and-panel)"
+  ],
+  "next_tasks": [
+    "DE/AT: Hettich/Blum 32mm primary docs; IT/FR/ES carcass makers",
+    "US: production face-frame docs (KCMA/mfr shop drawings) to replace DIY-lit evidence",
+    "AU: dedicated wardrobe carcass doc (Stegbar/flexistore), more vanity/laundry",
+    "CN: mine P0-01-A DWG entity coords for hole maps when needed",
+    "resolve UNKNOWNs in 12 doc (rail dims etc.) via factory cutlists",
+    "GT-01..04 automated verification harness"
+  ],
+  "files": {
+    "records": [
+      "03_CABINET_INSTANCES.jsonl",
+      "04_ASSEMBLY_PATTERNS.jsonl",
+      "05_PARTS.jsonl",
+      "06_JOINTS.jsonl",
+      "07_CONSTRAINTS.jsonl",
+      "08_PARAMETER_CANDIDATES.jsonl",
+      "09_EVIDENCE_INDEX.jsonl"
+    ],
+    "indexes": [
+      "01_SOURCE_INDEX.csv",
+      "02_COUNTRY_INDEX.csv",
+      "10_VARIANT_MATRIX.md",
+      "12_UNKNOWN_AND_CONFLICTS.md"
+    ],
+    "schema": "SCHEMA.md",
+    "logs": [
+      "logs/fetch_log.jsonl",
+      "logs/pdf_queue_all.txt (77 mapped urls)",
+      "logs/parts_scan.txt"
+    ],
+    "renders": "evidence_text/renders/*.png (assembly pages, visually verified)"
+  }
+}

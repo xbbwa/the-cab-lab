@@ -1,0 +1,10 @@
+region,sources,status,notes
+AU,"kaboodle 77 PDFs (SRC-D-0001..0027,0032); Flatpax 15 PDFs (SRC-D-0033); Mocka (0034); ADP (0035); Custom Flatpack (0029); KB training guide (0028)",PRIMARY_BASELINE,"two distinct flatpack systems confirmed: face-screw+thick overlay back (kaboodle) vs cam+pin+3mm nailed back (Flatpax); legs 145mm industry norm"
+NZ,"kbnz_* docs (0014,0015,0017,0019,0027)",COVERED,"same patterns as AU kaboodle; NZ-specific metal-sided drawer hardware variant"
+SE/global,"IKEA METOD wall+base docs (0030,0031)",COVERED,"cam+dowel; groove-captured thin back; suspension rail; 32mm hole grid"
+UK,"TKC (0036); Wren x2 (0037,0038); DIY-Kitchens (0039 partial); Finsahome (0040)",COVERED,"18mm carcass; solid 18mm back inset w/ 41mm void; centre post >=700; cam dowel+lock; concealed hangers; groove-back variant (Wren)"
+US,"JCC guide (0041); Ana White template (0042)",COVERED_PARTIAL,"face-frame system: integral toekick cutout, pocket screws, frame wider than carcass; production (KCMA) docs not yet captured"
+DE/AT,"none directly; 32mm evidenced via METOD hole grid + UK concealed-hanger practice",PARTIAL,"Hettich/Blum configurator docs still open targets"
+CN,"P0-01-A DWG corpus cross-ref (0043)",COVERED_VIA_SIBLING,"minifix joinery; 18mm panels; 5mm backs; verified cutlist rules"
+IT,"none yet",PENDING,""
+JP,"none yet",PENDING,""

@@ -1,0 +1,4 @@
+# raw manufacturer PDF/doc snapshots excluded: copyrighted docs + 230MB.
+# Repo is public; snapshots remain local only. All derived data (text extracts,
+# renders, structured records, reports) is committed.
+raw_snapshots/
